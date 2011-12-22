@@ -42,6 +42,20 @@ Project.find(42).owner.bonk do |o|
 #   }
 end
 ```
+***Achtung!*** Like #map you can use #bonk for side effects and they will
+affect the given object. In other words, it isn't duped.
+
+```ruby
+a_sub = NuclearSub.new
+#=> #<NuclearSub:0x0000010208e730>
+a_sub.bonk{ |sub| sub.generate_missle_launch_codes }
+#=> "FIREZEMISSLES"
+
+sub
+#=> #<NuclearSub:0x0000010208e730
+#     @missle_launch_codes = "FIREZEMISSLES"
+#   >
+```
 
 ## Disclaimer
 
