@@ -12,7 +12,8 @@ Why would you bother using bonk?
 - I dunno, I just like to avoid unnecessary temporary variables.
 - Bonk came about because I wanted to take an ActiveRecord model and send
 them through a reporting script I wrote that took hashes of information. I tried
-to do the transformation inline.
+to do the transformation inline but realized that what I wanted, `#map` for
+`Object`, didn't exist. So I made it using ___the power of Ruby___.
 
 ## Installation
 
@@ -40,8 +41,8 @@ end
 ## Disclaimer
 
 Don't trust this gem with nuclear submarine controls. I seriously conceived it
-and wrote it after two train rides and a late night conversation with my very
-annoyed girlfriend.
+and wrote it over two train rides after a late night conversation with my none
+too amused girlfriend.
 
 ## Contributing
 
@@ -52,4 +53,7 @@ annoyed girlfriend.
 3. Commit your changes.
 4. Push to the branch.
 5. Create a new Pull Request.
+
+[GitHub]: https://github.com/nuclearsandwich/bonk
+[BitBucket]: http://bitbucket.org/nuclearsandwich/bonk
 
