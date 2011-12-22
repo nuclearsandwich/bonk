@@ -1,5 +1,10 @@
-require "bonk/version"
+require_relative "bonk/version"
 
 module Bonk
-  # Your code goes here...
+  module Bonk::InstanceMethods
+    def bonk
+    end
+  end
+
+  ::Object.send :include, Bonk::InstanceMethods
 end
