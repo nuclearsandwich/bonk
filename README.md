@@ -35,6 +35,11 @@ Or install it yourself as:
 Project.find(42).owner.bonk do |o|
   { :id => o.id, :name => o.realname,
     :problem => "Never updated credit card information." }
+#=> {
+#     :id => 27,r
+#     :name => "Douglas Adams",
+#     :problem => "Never updated credit card information"
+#   }
 end
 ```
 
